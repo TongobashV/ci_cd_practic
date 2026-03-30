@@ -1,5 +1,5 @@
 name: python-deployment  # Назва workflow, яка відображатиметься в GitHub Actions UI
-run-name: ${{ github.actor }} - ${{ github.ref }} # хто запустив та що запустили
+run-name: ${{ github.actor }} - ${{ github.ref_name }} # хто запустив та що запустили
 
 on:
   push:
