@@ -6,7 +6,8 @@ run-name: ${{ github.actor }} is testing out Github Actions
 env:
   APP_ENV: PythonAPP
 on:
-  # Triggers the workflow on push or pull request events but only for the "main" branch
+  schedule:
+    - cron: '*/15 * * * *'
   push:
     branches: [ "main" ]
   pull_request:
