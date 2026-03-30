@@ -7,10 +7,9 @@ on:
   pull_request:
     branches: [main] # Запускати workflow при створенні pull request в гілку main
 
-    jobs:
-      python-ci:
-        runs-on ubuntu-latest  # Використовувати останню версію Ubuntu для виконання job
+jobs:
+  python-ci:
+    runs-on: ubuntu-latest  # Використовувати останню версію Ubuntu для виконання job
 
-        steps:
-
-        - uses: actions/checkout@v4  # Крок для перевірки коду з репозиторію
+    steps:
+    - uses: actions/checkout@v4  # Крок для перевірки коду з репозиторію
