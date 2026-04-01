@@ -83,8 +83,10 @@ def external_call():
             status=response.status_code
         )
     except Exception as e:
-        return Response(f"Error calling external endpoint: {str(e)}",
-        status=500)
+        return Response(
+            f"Error calling external endpoint: {str(e)}",
+            status=500
+        )
 
 
 if __name__ == "__main__":

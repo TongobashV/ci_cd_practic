@@ -29,4 +29,5 @@ jobs:
           pip install -r requirements.txt
       - name: Lint with flake8
         run: |
+          cd ../
           flake8 . --show-source --statistics
